@@ -5,9 +5,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp"
-    android:paddingBottom="16dp"
+    android:background="#26ade0"
     tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"
+        android:background="#3F51B5"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+        <ImageView
+            android:id="@+id/ball2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/ball2"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ball2" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/Ask_btn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="@string/ask"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:layout_marginBottom="150dp"
+            android:layout_centerInParent="true"
+            android:background="#3F51B5"/>
+    </RelativeLayout>
 </RelativeLayout>
